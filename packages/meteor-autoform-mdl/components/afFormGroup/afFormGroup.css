@@ -1,0 +1,5 @@
+.af-label--error span {
+  display: inline-table;
+  padding: 3px 5px;
+  position: absolute;
+}

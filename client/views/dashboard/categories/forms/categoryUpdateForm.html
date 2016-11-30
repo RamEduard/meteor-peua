@@ -1,0 +1,26 @@
+<template name="categoryUpdateForm">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+            <!-- New Event Card Form -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{_ 'categories.update_category'}}</h2>
+            </div>
+	          {{#autoForm id="categoryUpdateForm" collection="Categories" doc=category type="update" }}
+	              <div class="mdl-card__supporting-text">
+	                  <!-- Form Fields -->
+										{{> categoryFormFields }}
+	              </div>
+	              <div class="mdl-card__actions mdl-card--border">
+	                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+	                          type="submit">
+											{{_ 'common.update'}}
+	                  </button>
+                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                       href="{{pathFor 'dashboardCategories'}}">
+				              {{_ 'common.cancel'}}
+                    </a>
+	              </div>
+						{{/autoForm}}
+        </div>
+    </div>
+</template>

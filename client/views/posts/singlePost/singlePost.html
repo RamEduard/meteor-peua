@@ -1,0 +1,61 @@
+<template name="singlePost">
+    <div class="single-event mdl-grid">
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__custom-info mdl-color-text--white">
+                <div class="mdl-grid">
+                    <!-- Thumb image -->
+                    <div class="event-thumb-image mdl-cell--4-col">
+                        <img src="{{ imageThumbUrl }}" alt="{{ title }}"/>
+                    </div>
+                    <!-- Event info -->
+                    <div class="event-info mdl-cell--8-col">
+                        <!-- City -->
+                        <h4 class="city">{{city}}</h4>
+                        <!-- Title -->
+                        <h2 class="title">{{ title }}</h2>
+                        <!-- Description Short -->
+                        <h6 class="description-short">
+                            {{ descriptionShort }}
+                        </h6>
+                        <!-- Price, Date, Location -->
+                        <div class="bottom mdl-grid">
+                            <div class="price mdl-cell--4-col">
+                                <span class="icon material-icons">local_offer</span>
+                                <span class="text">2.480 bolivares + IVA</span>
+                            </div>
+                            <div class="date mdl-cell--4-col">
+                                <span class="icon material-icons">today</span>
+                                <span class="text">21 de Octubre 7:00 pm</span>
+                            </div>
+                            <div class="location mdl-cell--4-col">
+                                <span class="icon material-icons">place</span>
+                                <span class="text">{{location}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="author-info mdl-cell--12-col">
+                        <div class="author-info__body pull-right">
+                            <div class="thumb-image">
+                                <img src="/images/avatar.png" alt=""/>
+                            </div>
+                            <div class="text">
+                                <p>Por: Estefania Saturno</p>
+                                <p>@EstefaniaSaturn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{ > backgroundImage imageUrl="/images/bg-gray-2000x1000.png" }}
+            <div class="event-content mdl-color-text--grey-700 mdl-card__supporting-text">
+                <div class="mdl-grid">
+                    <!-- Description -->
+                    <div class="mdl-cell--12-col">
+                        {{{ htmlDescription }}}
+                    </div>
+                </div>
+            </div>
+            {{ > tags }}
+        </div>
+    </div>
+</template>

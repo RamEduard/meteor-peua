@@ -1,0 +1,204 @@
+{
+  "title": "Hoy Que Hay",
+  "banners": {
+    "edit_banner": "Editar Banner",
+    "new_banner": "Nuevo Banner",
+    "not_found": "No se han encontrado banners aún.",
+    "update_banner": "Editar Banner"
+  },
+  "categories": {
+    "edit_category": "Editar Categoría",
+    "new_category": "Nueva Categoría",
+    "not_found": "No se han encontrado categorías aún.",
+    "title": "Categorías",
+    "update_category": "Editar Categoría"
+  },
+  "cities": {
+    "edit_city": "Editar Ciudad",
+    "new_city": "Nueva Ciudad",
+    "not_found": "No se han encontrado ciudades aún.",
+    "title": "Ciudades",
+    "update_city": "Editar Ciudad"
+  },
+  "common": {
+    "actions": "Acciones",
+    "author": "Autor",
+    "browser_the": "Navega los",
+    "cancel": "Cancelar",
+    "category": "Categoría",
+    "city": "Ciudad",
+    "company": "Empresa",
+    "deactivate": "Deactivate",
+    "delete": "Eliminar",
+    "developed_by": "Desarrollado por",
+    "edit": "Editar",
+    "featured_until": "Favorito hasta",
+    "list": "Listar",
+    "new": "Nuevo",
+    "no": "No",
+    "or": "o",
+    "post_on": "Publicado en",
+    "save": "Guardar",
+    "sign_in": "Iniciar sesión",
+    "sign_in_with_google": "Iniciar sesión con Google",
+    "sign_out": "Cerrar sesión",
+    "sign_up": "Registrarse",
+    "update": "Actualizar",
+    "user_profile": "Perfil de Usuario",
+    "view_all": "Ver",
+    "yes": "Sí"
+  },
+  "datetime-picker": {
+    "change_date": "Cambiar Fecha",
+    "change_time": "Cambiar Hora"
+  },
+  "events": {
+    "activate": "Activar Evento",
+    "deactivate": "Desactivar Evento",
+    "edit": "Editar Evento",
+    "featured_events_not_found": "Eventos destacados no encontrados",
+    "last_post_about": "Última publicación hace",
+    "my_posted_events": "Mis Eventos Publicados",
+    "not_found": "No se han encontrado eventos publicados aún.",
+    "published_events_text": "eventos activos",
+    "post_event": "Publicar un evento",
+    "recent_events": "Eventos Recientes",
+    "select_category": "Seleccione alguna categoría",
+    "select_city": "Seleccione alguna ciudad",
+    "title": "Eventos",
+    "update_event": "Editar Evento"
+  },
+  "not_found": {
+    "may_deleted": "Puede haber sido borrada por el propietario o eliminado por los administradores.",
+    "oops": "Vaya, no hemos podido encontrar el elemento que pertenece a esta dirección URL."
+  },
+  "reviews": {
+    "activate": "Activar Reseña",
+    "deactivate": "Desactivar Reseña",
+    "edit": "Editar Reseña",
+    "my_posted_reviews": "Mis Reseñas Publicadas",
+    "not_found": "No se han encontrado reseñas publicadas aún.",
+    "post_review": "Publicar una Reseña",
+    "title": "Reseñas",
+    "update_review": "Editar Reseña"
+  },
+  "schemas": {
+    "banners": {
+      "dateEnd": {
+        "label": "Fecha Final"
+      },
+      "dateStart": {
+        "label": "Fecha Inicial"
+      },
+      "htmlCode": {
+        "label": "Código HTML o Javascript"
+      },
+      "imageUrl": {
+        "label": "Imagen de Banner (URL)"
+      },
+      "siteSection": {
+        "label": "Sección del Sitio"
+      },
+      "type": {
+        "label": "Tipo"
+      }
+    },
+    "categories": {
+      "name": {
+        "label": "Nombre"
+      },
+      "isHidden": {
+        "label": "¿Está Oculta?"
+      }
+    },
+    "cities": {
+      "name": {
+        "label": "Nombre"
+      },
+      "isHidden": {
+        "label": "¿Está Oculta?"
+      }
+    },
+    "events": {
+      "category": {
+        "label": "Seleccione una categoría"
+      },
+      "cityId": {
+        "label": "Seleccione una ciudad"
+      },
+      "company": {
+        "label": "Empresa / Compañía",
+        "placeholder": "Empresa o compañía que promueve el Evento"
+      },
+      "contact": {
+        "label": "Información de Contacto",
+        "placeholder": "email/twitter/otro para ser contactado porque (tu email de usuario no será mostrado)"
+      },
+      "description": {
+        "label": "Descripción del Evento",
+        "placeholder": "Escribe la información completa y detallada del evento, con imágenes y más."
+      },
+      "descriptionShort": {
+        "label": "Descripción corta del Evento",
+        "placeholder": "Escribe un resumen breve del Evento"
+      },
+      "imageUrl": {
+        "label": "Imagen Destacada",
+        "placeholder": "Introduce alguna URL para la imagen destacada"
+      },
+      "imageThumbUrl": {
+        "label": "Imagen Destacada (Miniatura)",
+        "placeholder": "Introduce alguna URL para la imagen destacada (Miniatura)"
+      },
+      "location": {
+        "label": "Dirección del Evento",
+        "placeholder": "¿Dónde será el evento?"
+      },
+      "publicationDate": {
+        "label": "Fecha de Publicación"
+      },
+      "title": {
+        "label": "Título",
+        "placeholder": "Introduce el título del evento",
+        "error": "Título inválido"
+      },
+      "userName": {
+        "label": "Nombre de Usuario"
+      }
+    },
+    "reviews": {
+      "cityId": {
+        "label": "Seleccione una ciudad"
+      },
+      "description": {
+        "label": "Descripción de la Reseña",
+        "placeholder": "Escribe la información completa y detallada de la reseña, con imágenes y más."
+      },
+      "descriptionShort": {
+        "label": "Descripción corta de la reseña",
+        "placeholder": "Escribe un resumen breve de la Reseña"
+      },
+      "imageUrl": {
+        "label": "Imagen Destacada",
+        "placeholder": "Introduce alguna URL para la imagen destacada"
+      },
+      "imageThumbUrl": {
+        "label": "Imagen Destacada (Miniatura)",
+        "placeholder": "Introduce alguna URL para la imagen destacada (Miniatura)"
+      },
+      "publicationDate": {
+        "label": "Fecha de Publicación"
+      },
+      "title": {
+        "label": "Título",
+        "placeholder": "Introduce el título de la reseña"
+      },
+      "userName": {
+        "label": "Nombre de Usuario"
+      }
+    }
+  },
+  "users": {
+    "your_user_profile": "Tu Perfil de Usuario"
+  }
+}

@@ -1,0 +1,15 @@
+<template name="afInputDatetimePicker_mdl">
+    <input class="mdl-textfield__input datetime-picker" type="text" value="{{ moFormat this.value "YYYY-MM-DD HH:mm:ss" }}" {{this.atts}} />
+    <div class="datetime-picker__actions">
+      <span class="material-icons datetime-picker__date-action"
+            id="{{ dateActionId }}">event</span>
+      <div class="mdl-tooltip" data-mdl-for="{{ dateActionId }}">
+        {{_ 'datetime-picker.change_date'}}
+      </div>
+      <span class="material-icons datetime-picker__time-action"
+            id="{{ timeActionId }}">alarm</span>
+      <div class="mdl-tooltip" data-mdl-for="{{ timeActionId }}">
+        {{_ 'datetime-picker.change_time'}}
+      </div>
+    </div>
+</template>

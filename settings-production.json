@@ -1,0 +1,15 @@
+{
+  "public": {
+    "uploadcare":{
+      "publickey":"Upload Care Public Key"
+    }
+  },
+  "private": {
+    "oAuth": {
+      "google": {
+        "clientId": "",
+        "secret": ""
+      }
+    }
+  }
+}

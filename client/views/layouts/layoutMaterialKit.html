@@ -1,0 +1,12 @@
+<template name="layoutMaterialKit">
+  <!-- Header -->
+	{{>yield region='header'}}
+
+	<!-- Content -->
+  <div class="wrapper">
+		{{>yield}}
+
+		<!-- Footer -->
+		{{>yield region='footer'}}
+  </div>
+</template>

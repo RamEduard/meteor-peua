@@ -1,0 +1,16 @@
+{
+  "name": "meteor-hqh",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --settings settings-development.json"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "draggabilly": "^2.1.1",
+    "meteor-node-stubs": "^0.2.3"
+  },
+  "devDependencies": {
+    "jeet": "^7.1.0",
+    "node-sass": "^3.13.0"
+  }
+}

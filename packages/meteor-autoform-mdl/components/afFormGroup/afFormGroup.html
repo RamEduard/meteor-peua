@@ -1,0 +1,25 @@
+<template name="afFormGroup_mdl">
+  <div class="mdl-grid">
+    <div class="{{#if addInputField}}input-field{{/if}} mdl-cell mdl-cell--12-col {{getMdlComponentOuterDivClass this this.afFieldInputAtts}}">
+
+            {{#if skipLabel}}
+                {{> afFieldInput this.afFieldInputAtts}}
+            {{else}}
+                {{>afLabel_mdl this}}
+                {{> afFieldInput this.afFieldInputAtts}}
+            {{/if}}
+
+            {{#if afFieldIsInvalid name=this.name}}
+                    {{#if mdlErr}}
+                        <span class="{{ mdlErr }}">{{{afFieldMessage name=this.name}}}</span>
+                    {{else}}
+                        <div class="mdl-color-text--red af-label--error">
+                            <i class="material-icons">error_outline</i>
+                            <span>{{{afFieldMessage name=this.name}}}</span>
+                        </div>
+                    {{/if}}
+            {{/if}}
+
+    </div>
+  </div>
+</template>

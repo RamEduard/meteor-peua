@@ -1,0 +1,41 @@
+<template name="dashboardDrawer">
+    <div class="dashboard-drawer mdl-layout__drawer">
+      <header class="dashboard-drawer-header">
+        <img src="/images/avatar.png" class="dashboard-avatar">
+        <div class="dashboard-avatar-dropdown">
+          <span>{{userEmail}}</span>
+          <div class="mdl-layout-spacer"></div>
+          <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <i class="material-icons" role="presentation">arrow_drop_down</i>
+            <span class="visuallyhidden">Accounts</span>
+          </button>
+          <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+            <li class="mdl-menu__item">
+              {{userEmail}}
+            </li>
+            <li class="mdl-menu__item sign-out">
+              <i class="material-icons">lock</i>{{_ 'common.sign_out'}}
+            </li>
+          </ul>
+        </div>
+      </header>
+      <nav class="dashboard-navigation mdl-navigation">
+        <!-- Dashboard -->
+        <a class="mdl-navigation__link" href="{{pathFor 'dashboard'}}">
+          <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">dashboard</i>Dashboard
+        </a>
+        <!-- Categories -->
+        <a class="mdl-navigation__link" href="{{pathFor 'dashboardCategories'}}">
+          <i class="mdl-color-text--blue-grey-400 material-icons">assignment</i>{{_ 'categories.title'}}
+        </a>
+        <!-- Posts -->
+        <a class="mdl-navigation__link" href="{{pathFor 'dashboardPosts'}}">
+            <i class="mdl-color-text--blue-grey-400 material-icons">assignment</i>{{_ 'posts.title'}}
+        </a>
+        <div class="mdl-layout-spacer"></div>
+        <a class="mdl-navigation__link" href="">
+          <i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span>
+        </a>
+      </nav>
+    </div>
+</template>

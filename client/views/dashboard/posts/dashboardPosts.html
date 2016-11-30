@@ -1,0 +1,68 @@
+<template name="dashboardPosts">
+  <h3>{{_ 'posts.title'}}</h3>
+  <table class="mdl-data-table mdl-js-data-table">
+    <thead>
+      <tr>
+        <th>{{_ 'schemas.posts.title.label'}}</th>
+        <th>{{_ 'common.category'}}</th>
+        <th>{{_ 'schemas.posts.publicationDate.label'}}</th>
+        <th>{{_ 'common.author'}}</th>
+        <th>{{_ 'common.actions'}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each events}}
+        <tr>
+          <td>{{title}}</td>
+          <td>{{getCategory(categoryId)}}</td>
+          <td>{{moFormat createdAt 'DD-MMM-YYYY'}}</td>
+          <td>{{userName}}</td>
+          <td>
+            <a
+              class="edit mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--accent"
+              id="edit-{{_id}}"
+              href="{{pathFor 'dashboardEventEdit'}}">
+              <i class="material-icons">edit</i>
+            </a>
+            <div class="mdl-tooltip" data-mdl-for="edit-{{_id}}">
+              {{_ 'events.edit'}}
+            </div>
+            {{!-- Show deactivate --}}
+            {{#if $eq status "active"}}
+              <button
+                  class="deactivate mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-color--red"
+                  data-id="{{_id}}"
+                  id="deactivate-{{_id}}"
+                  type="button">
+                <i class="material-icons mdl-color-text--white">close</i>
+              </button>
+              <div class="mdl-tooltip" data-mdl-for="deactivate-{{_id}}">
+                {{_ 'posts.deactivate'}}
+              </div>
+            {{/if}}
+            {{!-- Show activate --}}
+            {{#if or ($eq status "inactive") ($eq status "pending") }}
+              <button
+                    class="activate mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-color--green"
+                    data-id="{{_id}}"
+                    id="activate-{{_id}}"
+                    type="button">
+                <i class="material-icons mdl-color-text--white">check</i>
+              </button>
+              <div class="mdl-tooltip" data-mdl-for="activate-{{_id}}">
+                {{_ 'posts.activate'}}
+              </div>
+            {{/if}}
+          </td>
+        </tr>
+      {{else}}
+        <tr>
+          <td colspan="10">
+            {{_ 'posts.not_found'}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+</template>

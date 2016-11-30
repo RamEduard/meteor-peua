@@ -1,0 +1,197 @@
+{
+  "title": "Hoy Que Hay",
+  "banners": {
+    "edit_banner": "Edit Banner",
+    "new_banner": "New Banner",
+    "not_found": "Not found banners yet.",
+    "update_banner": "Update Banner"
+  },
+  "categories": {
+    "edit_category": "Edit Category",
+    "new_category": "New Category",
+    "not_found": "Not found categories yet.",
+    "title": "Categories",
+    "update_category": "Update Category"
+  },
+  "common": {
+    "actions": "Actions",
+    "author": "Author",
+    "browser_the": "Browser the",
+    "cancel": "Cancel",
+    "category": "Category",
+    "city": "City",
+    "company": "Company",
+    "deactivate": "Desactivar",
+    "delete": "Delete",
+    "developed_by": "Developed by",
+    "edit": "Edit",
+    "featured_until": "Featured Until",
+    "list": "List",
+    "new": "New",
+    "no": "No",
+    "or": "or",
+    "post_on": "Post on",
+    "save": "Save",
+    "sign_in": "Sign In",
+    "sign_in_with_google": "Sign in with Google",
+    "sign_out": "Sign Out",
+    "sign_up": "Sign Up",
+    "update": "Update",
+    "user_profile": "User Profile",
+    "view_all": "View All",
+    "yes": "Yes"
+  },
+  "datetime-picker": {
+    "change_date": "Change Date",
+    "change_time": "Change Time"
+  },
+  "events": {
+    "activate": "Activate Event",
+    "deactivate": "Deactivate Event",
+    "edit": "Edit Event",
+    "featured_events_not_found": "Featured events not found",
+    "last_post_about": "Last post about",
+    "my_posted_events": "My Posted Events",
+    "not_found": "Not found post events yet.",
+    "published_events_text": "active event postings",
+    "post_event": "Post a Event",
+    "recent_events": "Recent Events",
+    "select_category": "Select some category",
+    "select_city": "Select some city",
+    "title": "Events",
+    "update_event": "Update Event"
+  },
+  "not_found": {
+    "may_deleted": "It may have been deleted by the owner or removed by admins.",
+    "oops": "Oops, we couldn't find the item that belongs to this url."
+  },
+  "reviews": {
+    "activate": "Activate Review",
+    "deactivate": "Deactivate Review",
+    "edit": "Edit Review",
+    "my_posted_events": "My Posted Reviews",
+    "not_found": "Not found post reviews yet.",
+    "post_review": "Post a Review",
+    "title": "Reviews",
+    "update_review": "Update Review"
+  },
+  "schemas": {
+    "banners": {
+      "dateEnd": {
+        "label": "End Date"
+      },
+      "dateStart": {
+        "label": "Start Date"
+      },
+      "htmlCode": {
+        "label": "Javascript or HTML Code"
+      },
+      "imageUrl": {
+        "label": "Image Url"
+      },
+      "siteSection": {
+        "label": "Site Section"
+      },
+      "type": {
+        "label": "Type"
+      }
+    },
+    "cities": {
+      "name": {
+        "label": "Name"
+      },
+      "isHidden": {
+        "label": "Is Hidden?"
+      }
+    },
+    "categories": {
+      "name": {
+        "label": "Name"
+      },
+      "isHidden": {
+        "label": "Is Hidden?"
+      }
+    },
+    "events": {
+      "categoryId": {
+        "label": "Select some category"
+      },
+      "cityId": {
+        "label": "Select some city"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Company that promote the event"
+      },
+      "contact": {
+        "label": "Contact Info",
+        "placeholder": "email/twitter/whatever for you to be contacted at (your user account email address is not displayed)"
+      },
+      "description": {
+        "label": "Event Description",
+        "placeholder": "Write the complete information about Event"
+      },
+      "descriptionShort": {
+        "label": "Short Description",
+        "placeholder": "Write a summary about Event"
+      },
+      "imageUrl": {
+        "label": "Featured Image",
+        "placeholder": "Introduce some featured image URL"
+      },
+      "imageThumbUrl": {
+        "label": "Featured Image (Thumbnail)",
+        "placeholder": "Introduce some featured image URL (Thumbnail)"
+      },
+      "location": {
+        "label": "Location",
+        "placeholder": "Where will be the event?"
+      },
+      "publicationDate": {
+        "label": "Publication Date"
+      },
+      "title": {
+        "label": "Title",
+        "placeholder": "Enter a title for your event",
+        "error": "Invalid title"
+      },
+      "userName": {
+        "label": "User Name"
+      }
+    },
+    "reviews": {
+      "cityId": {
+        "label": "Select some city"
+      },
+      "description": {
+        "label": "Review Description",
+        "placeholder": "Write the complete information about Review"
+      },
+      "descriptionShort": {
+        "label": "Short Description",
+        "placeholder": "Write a summary about Review"
+      },
+      "imageUrl": {
+        "label": "Featured Image",
+        "placeholder": "Introduce some featured image URL"
+      },
+      "imageThumbUrl": {
+        "label": "Featured Image (Thumbnail)",
+        "placeholder": "Introduce some featured image URL (Thumbnail)"
+      },
+      "publicationDate": {
+        "label": "Publication Date"
+      },
+      "title": {
+        "label": "Title",
+        "placeholder": "Enter a title for your review"
+      },
+      "userName": {
+        "label": "User Name"
+      }
+    }
+  },
+  "users": {
+    "your_user_profile": "Your User Profile"
+  }
+}

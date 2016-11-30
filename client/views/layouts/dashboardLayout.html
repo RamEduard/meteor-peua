@@ -1,0 +1,18 @@
+<template name="dashboardLayout">
+    <!-- Layout -->
+    <div class="dashboard-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Header -->
+        {{>yield region='header'}}
+
+        {{>yield region='drawer'}}
+
+        <!-- Content -->
+        <main class="mdl-layout__content">
+            {{>yield}}
+        </main>
+
+        <!-- Footer -->
+        {{>yield region='footer'}}
+    </div>
+</template>

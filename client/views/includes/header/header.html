@@ -1,0 +1,43 @@
+<template name="header">
+    <!-- Navbar -->
+    <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="http://www.creative-tim.com">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="/images/logo/PEUA1_2.png" alt="PEUA Logo" rel="tooltip" title="<b>PEUA</b> ha sido diseñado por <b>/rulosconlentes</b>" data-placement="bottom" data-html="true">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navigation-index">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="material-icons">dashboard</i> Contenido
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{pathFor 'dashboard'}}" target="_blank">
+                            <i class="material-icons">unarchive</i> Agregar tu contenido
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="tooltip" title="Sigueme en GitHub" data-placement="bottom" href="https://github.com/RamEduard" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+</template>

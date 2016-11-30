@@ -1,0 +1,26 @@
+<template name="postUpdateForm">
+    <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+            <!-- New Event Card Form -->
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{_ 'events.update_event'}}</h2>
+            </div>
+	          {{#autoForm id="postUpdateForm" collection="Posts" doc=event type="update" }}
+	              <div class="mdl-card__supporting-text">
+	                  <!-- Form Fields -->
+										{{> postFormFields }}
+	              </div>
+	              <div class="mdl-card__actions mdl-card--border">
+	                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+	                          type="submit">
+											{{_ 'common.update'}}
+	                  </button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                            id="cancel">
+				              {{_ 'common.cancel'}}
+                    </button>
+	              </div>
+						{{/autoForm}}
+        </div>
+    </div>
+</template>

@@ -1,0 +1,56 @@
+<template name="dashboardCategories">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+      <h3>
+        {{_ 'categories.title'}}
+      </h3>
+    </div>
+    <!-- Categories Insert Form -->
+    <div class="mdl-cell mdl-cell--6-col">
+      {{> categoryInsertForm}}
+    </div>
+    <!-- Table cell -->
+    <div class="mdl-cell mdl-cell--6-col">
+      <table class="mdl-data-table mdl-js-data-table">
+        <thead>
+          <tr>
+            <th>{{_ 'schemas.categories.name.label'}}</th>
+            <th>{{_ 'schemas.categories.isHidden.label'}}</th>
+            <th>{{_ 'common.actions'}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each categories}}
+            <tr>
+              <td>{{ name }}</td>
+              <td>
+                {{#if isHidden }}
+                  {{_ 'common.yes' }}
+                {{else}}
+                  {{_ 'common.no' }}
+                {{/if}}
+              </td>
+              <td>
+                <a
+                  class="edit mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--accent"
+                  id="edit-{{_id}}"
+                  href="{{pathFor 'dashboardCategoryEdit'}}">
+                  <i class="material-icons">edit</i>
+                </a>
+                <div class="mdl-tooltip" data-mdl-for="edit-{{_id}}">
+                  {{_ 'categories.edit_category'}}
+                </div>
+              </td>
+            </tr>
+          {{else}}
+            <tr>
+              <td colspan="3">
+                {{_ 'categories.not_found'}}
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>

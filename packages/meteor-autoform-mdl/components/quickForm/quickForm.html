@@ -1,0 +1,18 @@
+<template name="quickForm_mdl">
+  {{#autoForm this.qfAutoFormContext}}
+    {{> afQuickFields}}
+    {{#if qfShouldRenderButton}}
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col">
+          <button type="submit" {{submitButtonAtts}}>
+            {{#with ../atts.buttonContent}}
+              {{this}}
+            {{else}}
+              Submit
+            {{/with}}
+          </button>
+        </div>
+      </div>
+    {{/if}}
+  {{/autoForm}}
+</template>
