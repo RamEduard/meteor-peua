@@ -7,7 +7,7 @@
                         <h1>
                             <span class="black">[</span> PROGRAMA EN UN AÑO <span class="black">]</span>
                         </h1>
-                        <h3>Lorem ipsum, lorem ipsum, lorem ipsum.</h3>
+                        <h3>Descubre, Reflexiona, Aprende y Programa</h3>
                     </div>
                 </div>
             </div>
@@ -16,9 +16,9 @@
     </div>
     <div class="main main-raised">
         <div class="container">
-            <div class="section text-center section-landing">
+            <div class="section section-landing">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 text-center">
                         <h2 class="title">Contenido Programático</h2>
                         <h5 class="description">Este contenido es fundamental para aprender a programar.</h5>
                     </div>
@@ -27,7 +27,7 @@
                 <div class="features">
                     <div class="row">
                         <!-- Tabs with icons on Card -->
-                        <div class="card card-nav-tabs">
+                        <div class="app-content card card-nav-tabs">
                             <div class="header header-success">
                                 <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
                                 <div class="nav-tabs-navigation">
@@ -53,15 +53,23 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <div class="tab-content text-center">
-                                    <div class="tab-pane active" id="profile">
-                                        <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="algorithm">
+                                        {{> introAlgoritmicaProgramacion }}
                                     </div>
-                                    <div class="tab-pane" id="messages">
-                                        <p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+                                    <div class="tab-pane" id="logic">
+                                        {{> introLogica }}
                                     </div>
-                                    <div class="tab-pane" id="settings">
-                                        <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+                                    <div class="tab-pane" id="maths">
+                                        {{> introMatematicaAlgebra }}
+                                    </div>
+                                    <div class="tab-pane" id="stats">
+                                        <h4 class="text-info text-center">Activar los subtítulos y autotraducir al español</h4>
+                                        {{> introStats }}
+                                    </div>
+                                    <div class="tab-pane" id="database">
+                                        <h4 class="text-info text-center">Activar los subtítulos y autotraducir al español</h4>
+                                        {{> introDatabase }}
                                     </div>
                                 </div>
                             </div>
@@ -82,25 +90,32 @@
                         <!--  Images Carousel sample -->
                         <div id="owl-technologies" class="owl-carousel">
                             <div class="item">
-                                <img src="/images/logo/angular2.svg" alt="Owl Image">
+                                <img src="/images/logo/angular2.svg" alt="Angular">
+                                <span>Angular</span>
                             </div>
                             <div class="item">
                                 <img src="/images/logo/css.svg" alt="CSS">
+                                <span>CSS</span>
                             </div>
                             <div class="item">
-                                <img src="/images/logo/javascript.svg" alt="Owl Image">
+                                <img src="/images/logo/javascript.svg" alt="Javascript">
+                                <span>Javascript</span>
                             </div>
                             <div class="item">
-                                <img src="/images/logo/node-js.svg" alt="Owl Image">
+                                <img src="/images/logo/php.svg" alt="PHP">
+                                <span>PHP</span>
                             </div>
                             <div class="item">
-                                <img src="/images/logo/react.svg" alt="Owl Image">
+                                <img src="/images/logo/node-js.svg" alt="Node.js">
+                                <span>Node.js</span>
                             </div>
                             <div class="item">
-                                <img src="/images/logo/rx-ac.svg" alt="Owl Image">
+                                <img src="/images/logo/react.svg" alt="React.js">
+                                <span>React.js</span>
                             </div>
                             <div class="item">
-                                <img src="/images/logo/php.svg" alt="Owl Image">
+                                <img src="/images/logo/rx-ac.svg" alt="Rx-ac">
+                                <span>Rx lib</span>
                             </div>
                         </div>
                     </div>
@@ -131,21 +146,21 @@
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <img class="img-responsive" src="/images/carousel-bg.jpg" alt="Awesome Image">
+                                            <img class="img-responsive" src="/images/frontend-developer.png" alt="Frontend Developer">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">view_quit</i> Desarrollador Front-end</h4>
                                                 <h5>Todo lo que ve un usuario en una aplicación de software.</h5>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img class="img-responsive" src="/images/carousel-bg.jpg" alt="Awesome Image">
+                                            <img class="img-responsive" src="/images/backend-developer.jpg" alt="Backend Developer">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">dashboard</i> Desarrollador Back-end</h4>
                                                 <h5>Almacenamiento de datos, respuestas ágiles a peticiones, lógica de negocios.</h5>
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <img class="img-responsive" src="/images/carousel-bg.jpg" alt="Awesome Image">
+                                            <img class="img-responsive" src="/images/full-stack-developer.jpg" alt="Full Stack Developer">
                                             <div class="carousel-caption">
                                                 <h4><i class="material-icons">hourglass_full</i> Desarrollador Full Stack</h4>
                                                 <h5>Servidores, redes, modelado de datos, APIs, interfaces y experiencias de usuario.</h5>
