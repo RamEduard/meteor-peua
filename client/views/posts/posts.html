@@ -1,5 +1,30 @@
 <template name="posts">
-    {{#each posts }}
-      {{title}}
-    {{/each}}
+    <div class="posts-header header header-filter" style="background-image: url('/images/Banner_PEUA.jpg');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brand">
+                        <h1>
+                            <span class="black">[</span> Publicaciones - Contenido <span class="black">]</span>
+                        </h1>
+                        <h3>Todo el contenido de la PEUA</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="single-post-main main main-raised">
+        <div class="container">
+            <div class="section section-landing">
+                <div class="features">
+                    <div class="row">
+                      <!-- Show posts -->
+                      {{#each posts }}
+                        {{title}}
+                      {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>

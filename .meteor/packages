@@ -87,4 +87,5 @@ creativeparts:meteor-autoform-mdl
 lbee:moment-helpers
 mizzao:jquery-ui
 meteorhacks:aggregate
-dcsan:sly
+#browser-policy
+hpx7:youtube-iframe-player

@@ -1,5 +1,12 @@
 <template name="dashboardPosts">
-  <h3>{{_ 'posts.title'}}</h3>
+  <h3>
+    Publicaciones
+      <small>
+          <a href="{{ pathFor 'dashboardPostsNew' }}">
+              Nuevo
+          </a>
+      </small>
+  </h3>
   <table class="mdl-data-table mdl-js-data-table">
     <thead>
       <tr>
@@ -21,7 +28,7 @@
             <a
               class="edit mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-js-ripple-effect mdl-button--accent"
               id="edit-{{_id}}"
-              href="{{pathFor 'dashboardEventEdit'}}">
+              href="{{pathFor 'dashboardPostEdit'}}">
               <i class="material-icons">edit</i>
             </a>
             <div class="mdl-tooltip" data-mdl-for="edit-{{_id}}">

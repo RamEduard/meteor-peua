@@ -8,6 +8,7 @@ PostController = MainController.extend({
             _id: this.params._id
         });
     },
+    layoutTemplate: 'layoutMaterialKit',
     template: 'singlePost',
     waitOn: function() {
         return [

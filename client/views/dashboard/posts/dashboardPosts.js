@@ -11,7 +11,7 @@ Template.dashboardPosts.onCreated(function () {
 
 Template.dashboardPosts.helpers({
   events () {
-    return Events.find();
+    return Posts.find();
   },
   getCategory (categoryId) {
     var category = Categories.findOne({ _id: categoryId });

@@ -8,7 +8,7 @@ Router.map(function() {
   // Posts
   this.route('posts', {
       path: '/posts',
-      title: "Hoy Que Hay - All Posts"
+      title: "PEUA - Publicaciones"
   });
 
   this.route('post', {

@@ -6,16 +6,6 @@ PostsSchema = new SimpleSchema({
     type: String,
     max: 128
   },
-  imageThumbUrl: {
-    type: String,
-    max: 256,
-    regEx: new RegExp('^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$')
-  },
-  imageUrl: {
-    type: String,
-    max: 256,
-    regEx: new RegExp('^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$')
-  },
   categoryId: {
     autoform: {
       options: () => {
@@ -29,14 +19,6 @@ PostsSchema = new SimpleSchema({
     },
     regEx: SimpleSchema.RegEx.Id,
     type: String
-  },
-
-  dateStart: {
-    type: Date
-  },
-  dateEnd: {
-    type: Date,
-    optional: true
   },
   userId: {
     type: String,
@@ -69,24 +51,16 @@ PostsSchema = new SimpleSchema({
   },
   description: {
     type: String,
-    max: 20000
+    max: 50000
   },
   descriptionShort: {
     type: String,
     max: 255
   },
   status: {
-    type: String,
     allowedValues: STATUSES,
-    autoValue: function() {
-      if (this.isInsert) {
-        return 'pending';
-      } else if (this.isUpsert) {
-        return {
-          $setOnInsert: 'pending'
-        };
-      }
-    }
+    defaultValue: 'active',
+    type: String
   },
   // Automatically set HTML content based on markdown content
   // whenever the markdown content is set.
@@ -149,13 +123,17 @@ Posts.helpers({
 });
 
 Posts.allow({
-  insert () {
+  insert: function(userId, doc) {
+    return userId && doc && userId === doc.userId;
+  },
+  update: function(userId, doc, fieldNames, modifier) {
+    return Roles.userIsInRole(userId, ['admin']) ||
+        (!_.contains(fieldNames, 'htmlDescription')
+        && !_.contains(fieldNames, 'status')
+        && /*doc.status === "pending" &&*/ userId && doc && userId === doc.userId);
+  },
+  remove: function(userId, doc) {
     return false;
   },
-  update () {
-    return false;
-  },
-  remove () {
-    return false
-  }
+  fetch: ['userId', 'status']
 });
