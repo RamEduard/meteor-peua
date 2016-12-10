@@ -11,10 +11,9 @@ Meteor.publish("posts", function(limit) {
         status: "active"
     }, {
         fields: {
+            categoryId: true,
             descriptionShort: true,
             title: true,
-            imageUrl: true,
-            imageThumbUrl: true,
             createdAt: true,
             updatedAt: true,
             status: true

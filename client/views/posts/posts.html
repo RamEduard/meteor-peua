@@ -13,14 +13,22 @@
             </div>
         </div>
     </div>
-    <div class="single-post-main main main-raised">
+    <div class="posts-main main main-raised">
         <div class="container">
             <div class="section section-landing">
                 <div class="features">
                     <div class="row">
                       <!-- Show posts -->
-                      {{#each posts }}
-                        {{title}}
+                      {{#each contenidos }}
+                          <div class="col-sm-4">
+                              <div class="info">
+                                  <div class="icon">
+                                      <i class="material-icons">code</i>
+                                  </div>
+                                  <h4 class="info-title">For Developers</h4>
+                                  <p>The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
+                              </div>
+                          </div>
                       {{/each}}
                     </div>
                 </div>

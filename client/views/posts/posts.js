@@ -6,11 +6,14 @@
 import { Template } from 'meteor/templating';
 
 Template.posts.onCreated(() => {
-
+    subs.subscribe('posts', 12)
 })
 
 Template.posts.helpers({
     contenidos () {
-
+        return Posts.find({
+            categoryId: { $exists: true },
+            title: { $regex: new RegExp('contenido', 'i') }
+        });
     }
 });
