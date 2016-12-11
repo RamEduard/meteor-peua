@@ -9,16 +9,26 @@ AutoForm.addHooks(['postInsertForm', 'postUpdateForm'], {
             if (error) {
                 console.log("Insert Error:", error);
             } else {
-                // analytics.track("Event Created");
-                Router.go('post', {_id:result});
+                let post = Posts.findOne({ _id: result });
+
+                Router.go('dashboardPostEdit', {
+                  _id: post._id,
+                  slug: getSlug(post.title)
+                });
             }
         },
         update: function(error, result) {
             if (error) {
                 console.log("Update Error:", error);
             } else {
-                // analytics.track("Event Edited");
-                Router.go('post', {_id: Router.current().params._id});
+              let post = Posts.findOne({
+                _id: Router.current().params._id
+              });
+
+              Router.go('dashboardPostEdit', {
+                _id: post._id,
+                slug: getSlug(post.title)
+              });
             }
         }
     }
