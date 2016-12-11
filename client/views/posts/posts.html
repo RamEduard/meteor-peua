@@ -7,7 +7,7 @@
                         <h1>
                             <span class="black">[</span> Publicaciones - Contenido <span class="black">]</span>
                         </h1>
-                        <h3>Todo el contenido de la PEUA</h3>
+                        <h3>Todo el contenido de PEUA</h3>
                     </div>
                 </div>
             </div>
@@ -16,19 +16,17 @@
     <div class="posts-main main main-raised">
         <div class="container">
             <div class="section section-landing">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 class="title">Contenido Programático</h2>
+                        <h5 class="description">Este contenido es recomendado para aprender a programar.</h5>
+                    </div>
+                </div>
                 <div class="features">
                     <div class="row">
                       <!-- Show posts -->
                       {{#each contenidos }}
-                          <div class="col-sm-4">
-                              <div class="info">
-                                  <div class="icon">
-                                      <i class="material-icons">code</i>
-                                  </div>
-                                  <h4 class="info-title">For Developers</h4>
-                                  <p>The moment you use Material Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before. </p>
-                              </div>
-                          </div>
+                          {{> contenidoPost class="col-sm-4" }}
                       {{/each}}
                     </div>
                 </div>

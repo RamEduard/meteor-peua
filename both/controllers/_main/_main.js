@@ -14,7 +14,7 @@ MainController = RouteController.extend({
   progressSpinner: false,
   progressDelay: 250,
   title: "PEUA - Programa En Un Año",
-  layoutTemplate: 'layout',
+  layoutTemplate: 'layoutMaterialKit',
   yieldTemplates: {
       drawer: {
           to: 'drawer'

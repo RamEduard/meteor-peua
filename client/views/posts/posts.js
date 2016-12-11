@@ -13,7 +13,7 @@ Template.posts.helpers({
     contenidos () {
         return Posts.find({
             categoryId: { $exists: true },
-            title: { $regex: new RegExp('contenido', 'i') }
+            title: { $regex: new RegExp('contenido programático', 'i') }
         });
     }
 });

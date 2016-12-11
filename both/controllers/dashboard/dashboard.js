@@ -13,7 +13,7 @@ DashboardController = MainController.extend({
       this.next();
     }
   },
-  title: 'Hoy Que Hay | Dashboard',
+  title: 'PEUA | Dashboard',
   waitOn: function () {
     return [ Meteor.subscribe("roles") ];
   },

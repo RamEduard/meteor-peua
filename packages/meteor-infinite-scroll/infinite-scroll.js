@@ -15,7 +15,8 @@ function triggerLoadMore() {
  * events are fired.
  */
 Meteor.startup(function() {
-  $(window).on('resize scroll', _.throttle(triggerLoadMore, 500));
+
+  $('.mdl-layout').on('resize scroll', _.throttle(triggerLoadMore, 500));
 });
 
 
@@ -39,8 +40,8 @@ jQuery.fn.isAlmostVisible = function jQueryIsAlmostVisible() {
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (jQuery(window).height() * 2) &&
-    rect.right <= jQuery(window).width()
+    rect.bottom <= (jQuery('.mdl-layout').height() * 2) &&
+    rect.right <= jQuery('.mdl-layout').width()
   );
 };
 

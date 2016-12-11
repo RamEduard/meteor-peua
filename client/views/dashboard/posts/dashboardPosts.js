@@ -10,8 +10,8 @@ Template.dashboardPosts.onCreated(function () {
 })
 
 Template.dashboardPosts.helpers({
-  events () {
-    return Posts.find();
+  posts () {
+    return Posts.find({}, { sort: { createdAt: -1, updatedAt: -1 }});
   },
   getCategory (categoryId) {
     var category = Categories.findOne({ _id: categoryId });

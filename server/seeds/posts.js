@@ -7,10 +7,14 @@
             .map(number => loremIpsum)
             .join('\n<br />\n');
 
-    var posts = [
+    var posts = [];
 
-    ];
+    posts = JSON.parse(Assets.getText('posts.json'));
 
     // Insert into collection
-    posts.forEach(event => Posts.insert(event));
+    posts.forEach(event => {
+      event.createdAt = new Date(event.createdAt.$date);
+      event.updatedAt = new Date(event.updatedAt.$date);
+      Posts.insert(event)
+    });
 })();
