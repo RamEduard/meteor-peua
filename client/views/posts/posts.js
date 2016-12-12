@@ -15,5 +15,11 @@ Template.posts.helpers({
             categoryId: { $exists: true },
             title: { $regex: new RegExp('contenido programático', 'i') }
         });
+    },
+    posts () {
+      return Posts.find({
+          categoryId: { $exists: true },
+          title: { $not: { $regex: new RegExp('contenido programático', 'i') } }
+      });
     }
 });

@@ -1,14 +1,5 @@
 import { Template } from 'meteor/templating'
 
-Template.dashboardPosts.onCreated(function () {
-  this.infiniteScroll({
-    perPage: 12,
-    subManager: subs,
-    collection: Posts,
-    publication: 'dashboard.posts'
-  });
-})
-
 Template.dashboardPosts.helpers({
   posts () {
     return Posts.find({}, { sort: { createdAt: -1, updatedAt: -1 }});
