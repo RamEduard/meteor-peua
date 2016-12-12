@@ -14,12 +14,16 @@ Template.posts.helpers({
         return Posts.find({
             categoryId: { $exists: true },
             title: { $regex: new RegExp('contenido programático', 'i') }
+        }, {
+            sort: { createdAt: -1 }
         });
     },
     posts () {
       return Posts.find({
           categoryId: { $exists: true },
           title: { $not: { $regex: new RegExp('contenido programático', 'i') } }
+      }, {
+          sort: { createdAt: -1 }
       });
     }
 });
