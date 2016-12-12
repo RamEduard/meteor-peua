@@ -1,7 +1,7 @@
 PostController = MainController.extend({
     title: function() {
         if (this.data())
-            return "Hoy Que Hay - " + this.data().title;
+            return "PEUA - " + this.data().title;
     },
     data: function() {
         return Posts.findOne({

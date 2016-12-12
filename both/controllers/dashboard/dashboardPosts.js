@@ -1,7 +1,8 @@
 DashboardPostsController = DashboardController.extend({
   subscriptions () {
       return [
-          subs.subscribe('dashboardCategories')
+          subs.subscribe('dashboardCategories'),
+          subs.subscribe('dashboard.posts')
       ]
   },
   title: 'PEUA | Dashboard - Publicaciones'
