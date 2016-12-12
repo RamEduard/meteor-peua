@@ -8,7 +8,10 @@ cleanHtml = (s) => {
       'h1', 'h2', 'img', 'iframe', 'span'
     ]),
     allowedAttributes: {
-      '*': ['style']
+      'a': ['href', 'target'],
+      'iframe': ['src', 'width', 'height', 'class'],
+      'img': ['alt', 'src'],
+      '*': ['class', 'style', 'title']
     },
   });
 
