@@ -7,8 +7,8 @@ Router.map(function() {
 
   // Posts
   this.route('posts', {
-      path: '/posts',
-      title: "PEUA - Publicaciones"
+      controller: PostsController,
+      path: '/posts'
   });
 
   this.route('post', {
