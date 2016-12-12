@@ -32,7 +32,9 @@
         }
     ];
 
-    categories.forEach(category => Categories.insert(category));
+    categories.forEach(category => {
+      category.isHidden = false;
+      Categories.insert(category);
+    });
 
 })();
-
